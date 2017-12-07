@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './MainUsersPage.css';
 import {TutorialModalBodyOne} from '../TutorialModalBody/TutorialModalBodyOne/TutorialModalBodyOne.js';
 import {TutorialModalBodyTwo} from '../TutorialModalBody/TutorialModalBodyTwo/TutorialModalBodyTwo.js';
+import {TutorialModalBodyThree} from '../TutorialModalBody/TutorialModalBodyThree/TutorialModalBodyThree.js';
 
 export class MainUsersPage extends Component {
 	constructor(props) {
@@ -37,7 +38,13 @@ export class MainUsersPage extends Component {
 	render() {
 		const state = this.state;
 		const contentOfModal = state.modalArray.map((item, i) => {
-			if (item.startModalTwo === true) {
+			if (item.startModalThree === true) {
+				return (
+					<div key={i}>
+						<TutorialModalBodyThree currentUsername={this.props.currentUsername} currentPassword={this.props.currentPassword} postData={this.props.postData} userData={this.props.userData} goingToLogIn={this.props.goingToLogIn} goingToSignIn={this.props.goingToSignIn} />
+					</div>
+				)
+			} else if (item.startModalTwo === true) {
 				return (
 					<div key={i}>
 						<TutorialModalBodyTwo currentUsername={this.props.currentUsername} currentPassword={this.props.currentPassword} postData={this.props.postData} userData={this.props.userData} goingToLogIn={this.props.goingToLogIn} goingToSignIn={this.props.goingToSignIn} />
@@ -58,7 +65,7 @@ export class MainUsersPage extends Component {
 					<div className="modal-dialog modal-lg" role="document">
 						<div className="modal-content">
 							<div className="modal-header">
-								<h5 className="modal-title" id="tutorialModalTitle">Modal title</h5>
+								<h5 className="modal-title" id="tutorialModalTitle">Dungeons and Dragons: Player Character Tutorial</h5>
 								<button type="button" className="close" data-dismiss="modal" aria-label="Close">
 									<span aria-hidden="true">&times;</span>
 								</button>
@@ -74,14 +81,14 @@ export class MainUsersPage extends Component {
 					</div>
 				</div>
 
+
+
 				<div className="container-fluid">
 					<div className="row">
 						<div className="col-12">
 							<h1>Table-Top RPG Character Sheet Manager</h1>
 						</div>
 					</div>
-
-
 
 					<div className="row">
 						<div className="col-12">
@@ -92,13 +99,12 @@ export class MainUsersPage extends Component {
 						</div>
 					</div>
 
-
-
 					<div className="row">
 						<div className="col-12">
 							<h3>{this.props.currentUsername}'s Saved Character Sheets</h3>
 						</div>
 					</div>
+
 					<div className="row" id="saved-sheets-buttons">
 						<div className="col-4">
 							<button id="button-one" className="btn btn-primary" type="button" data-toggle="collapse" data-target="#saved-character-sheet-1" aria-expanded="false" aria-controls="saved-character-sheet-1">Character Sheet 1</button>
@@ -110,6 +116,7 @@ export class MainUsersPage extends Component {
 							<button id="button-three" className="btn btn-primary" type="button" data-toggle="collapse" data-target="#saved-character-sheet-3" aria-expanded="false" aria-controls="saved-character-sheet-3" disabled>Character Sheet 3</button>
 						</div>
 					</div>
+
 					<div className="row collapse" id="saved-character-sheet-1">
 						<div className="col-12">
 							<p>Character Sheet Here...</p>
@@ -125,6 +132,7 @@ export class MainUsersPage extends Component {
 							<p>Character Sheet Here...</p>
 						</div>
 					</div>
+
 					<div className="row invisible">
 						<div className="col-12">
 							<p>This text should be invisible</p>

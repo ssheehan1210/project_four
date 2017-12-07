@@ -1,0 +1,15 @@
+#chara-info-categories {
+	background-color: darkblue;
+	color: gold;
+	text-align: left;
+	width: auto;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+@media (min-width: 992px) {
+	#chara-info-categories {
+		margin-left: 35%;
+		margin-right: 35%;
+	}
+}
