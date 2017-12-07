@@ -6,8 +6,8 @@ import {MainUsersPage} from './MainUsersPage/MainUsersPage.js';
 const request = require('superagent');
 
 class App extends Component {
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
     this.state = {
       userData: [],
       postData: [],
