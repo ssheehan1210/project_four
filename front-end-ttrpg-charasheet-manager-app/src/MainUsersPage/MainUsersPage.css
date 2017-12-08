@@ -1,3 +1,18 @@
+.justify-content-center {
+	background-color: black;
+}
+
+.row form {
+	background-color: black;
+	color: grey;
+}
+
 .modal-body div div.container-fluid div.row div.col-12 p {
+	background-color: unset;
+	color: unset;
 	text-align: left;
+}
+
+.modal-body div div.container-fluid div.row div.col-12 h5 {
+	text-decoration: underline;
 }

@@ -8,6 +8,7 @@ export class MainUsersPage extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
+			sampleData: '',
 			somethingWrongWithModal: false,
 			modalArray: [{startedModalOne: false, startModalTwo: false, startModalThree: false}]
 		};
@@ -37,6 +38,19 @@ export class MainUsersPage extends Component {
 
 	render() {
 		const state = this.state;
+		state.sampleData = this.props.postData.find(x => x.dungeons_and_dragons === true);
+		state.sampleAuthor = state.sampleData.author;
+		state.sampleCharacterName = state.sampleData.dadcharacter_name;
+		state.sampleGenderInputValue = state.sampleData.dadcharacter_gender;
+		state.sampleClassInputValue = state.sampleData.dadcharacter_class;
+		state.sampleRaceInputValue = state.sampleData.dadcharacter_race;
+		state.sampleAlignmentInputValue = state.sampleData.dadcharacter_alignment;
+		state.sampleDeityInputValue = state.sampleData.dadcharacter_deity;
+		state.sampleSizeInputValue = state.sampleData.dadcharacter_size;
+		state.sampleHeightInputValue = state.sampleData.dadcharacter_height;
+		state.sampleWeightInfoValue = state.sampleData.dadcharacter_weight;
+		state.sampleEyesInputValue = state.sampleData.dadcharacter_eyes;
+		state.sampleHairInputValue = state.sampleData.dadcharacter_hair;
 		const contentOfModal = state.modalArray.map((item, i) => {
 			if (item.startModalThree === true) {
 				return (
@@ -119,12 +133,71 @@ export class MainUsersPage extends Component {
 
 					<div className="row collapse" id="saved-character-sheet-1">
 						<div className="col-12">
-							<p>Character Sheet Here...</p>
+							<div className="container">
+								<div className="row justify-content-center">
+									<div className="col-12">
+										<h3>Dungeons and Dragons Character</h3>
+									</div>
+								</div>
+								<div className="row justify-content-center">
+									<form>
+										<div className="form-group">
+											<label className="form-control-label">Player Name:</label>
+											<input type="text" className="form-control" value={state.sampleData.author} onKeyPress={this.props.handleInput} onChange={this.props.handleInput} />
+										</div>
+										<div className="form-group">
+											<label className="form-control-label">Character Name:</label>
+											<input type="text" className="form-control" value={state.sampleData.dadcharacter_name} onKeyPress={this.handleInput} onChange={this.handleInput} />
+										</div>
+										<div className="form-group">
+											<label className="form-control-label">Class:</label>
+											<input type="text" className="form-control" value={state.sampleData.dadcharacter_gender} onKeyPress={this.handleInput} onChange={this.handleInput} />
+										</div>
+										<div className="form-group">
+											<label className="form-control-label">Race:</label>
+											<input type="text" className="form-control" value={state.sampleData.dadcharacter_class} placeholder="Half-Elf" onKeyPress={this.handleInput} onChange={this.handleInput} />
+										</div>
+										<div className="form-group">
+											<label className="form-control-label">Alignment:</label>
+											<input type="text" className="form-control" value={state.sampleData.dadcharacter_race} placeholder="Neutral Good" onKeyPress={this.handleInput} onChange={this.handleInput} />
+										</div>
+										<div className="form-group">
+											<label className="form-control-label">Deity:</label>
+											<input type="text" className="form-control" value={state.sampleData.dadcharacter_alignment} placeholder="N/A" onKeyPress={this.handleInput} onChange={this.handleInput} />
+										</div>
+										<div className="form-group">
+											<label className="form-control-label">Size:</label>
+											<input type="text" className="form-control" value={state.sampleData.dadcharacter_deity} placeholder="M" onKeyPress={this.handleInput} onChange={this.handleInput} />
+										</div>
+										<div className="form-group">
+											<label className="form-control-label">Gender:</label>
+											<input type="text" className="form-control" value={state.sampleData.dadcharacter_size} placeholder="Male" onKeyPress={this.handleInput} onChange={this.handleInput} />
+										</div>
+										<div className="form-group">
+											<label className="form-control-label">Height:</label>
+											<input type="text" className="form-control" value={state.sampleData.dadcharacter_height} onKeyPress={this.handleInput} onChange={this.handleInput} />
+										</div>
+										<div className="form-group">
+											<label className="form-control-label">Weight:</label>
+											<input type="text" className="form-control" value={state.sampleData.dadcharacter_weight} onKeyPress={this.handleInput} onChange={this.handleInput} />
+										</div>
+										<div className="form-group">
+											<label className="form-control-label">Eyes:</label>
+											<input type="text" className="form-control" value={state.sampleData.dadcharacter_eyes} onKeyPress={this.handleInput} onChange={this.handleInput} />
+										</div>
+										<div className="form-group">
+											<label className="form-control-label">Hair:</label>
+											<input type="text" className="form-control" value={state.sampleData.dadcharacter_hair} onKeyPress={this.handleInput} onChange={this.handleInput} />
+										</div>
+									</form>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div className="row collapse" id="saved-character-sheet-2">
 						<div className="col-12">
-							<p>Character Sheet Here...</p>
+							<h3>Official Character Sheet Version</h3>
+							<img src="https://i.warosu.org/data/tg/img/0415/77/1438320251039.jpg" />
 						</div>
 					</div>
 					<div className="row collapse" id="saved-character-sheet-3">

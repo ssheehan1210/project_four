@@ -1,0 +1,26 @@
+#second-modal-sentence {
+	text-align: center;
+}
+
+#first-modal-emphasis {
+	font-weight: bolder;
+	font-style: italic;
+}
+
+#second-modal-emphasis {
+	font-weight: bolder;
+	font-style: italic;
+}
+
+#second-modal-sentence small {
+	font-style: italic;
+}
+
+#third-modal-sentence span {
+	font-weight: bolder;
+	text-decoration: underline;
+}
+
+#first-modal-row .col-12 p {
+	margin-bottom: 0;
+}
