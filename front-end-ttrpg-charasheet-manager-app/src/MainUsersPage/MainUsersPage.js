@@ -28,6 +28,11 @@ export class MainUsersPage extends Component {
 				} else if (state.modalArray[i].startModalThree === false) {
 					console.log('Setting Modal Three to true');
 					state.modalArray[i].startModalThree = true;
+				} else {
+					console.log('Resetting modal booleans back to false');
+					state.modalArray[i].startedModalOne = false;
+					state.modalArray[i].startModalTwo = false;
+					state.modalArray[i].startModalThree = false;
 				}
 			});
 		} else {
@@ -55,7 +60,7 @@ export class MainUsersPage extends Component {
 			if (item.startModalThree === true) {
 				return (
 					<div key={i}>
-						<TutorialModalBodyThree currentUsername={this.props.currentUsername} currentPassword={this.props.currentPassword} postData={this.props.postData} userData={this.props.userData} goingToLogIn={this.props.goingToLogIn} goingToSignIn={this.props.goingToSignIn} />
+						<TutorialModalBodyThree nextModalPage={this.nextModalPage} currentUsername={this.props.currentUsername} currentPassword={this.props.currentPassword} postData={this.props.postData} userData={this.props.userData} goingToLogIn={this.props.goingToLogIn} goingToSignIn={this.props.goingToSignIn} />
 					</div>
 				)
 			} else if (item.startModalTwo === true) {
@@ -97,7 +102,7 @@ export class MainUsersPage extends Component {
 
 
 
-				<div className="container-fluid">
+				<div className="container-fluid" id="main-page-container">
 					<div className="row">
 						<div className="col-12">
 							<h1>Table-Top RPG Character Sheet Manager</h1>
@@ -121,13 +126,13 @@ export class MainUsersPage extends Component {
 
 					<div className="row" id="saved-sheets-buttons">
 						<div className="col-4">
-							<button id="button-one" className="btn btn-primary" type="button" data-toggle="collapse" data-target="#saved-character-sheet-1" aria-expanded="false" aria-controls="saved-character-sheet-1">Character Sheet 1</button>
+							<button id="button-one" className="btn btn-primary" type="button" data-toggle="collapse" data-target="#saved-character-sheet-1" aria-expanded="false" aria-controls="saved-character-sheet-1">{this.props.currentUsername}'s Character Data List</button>
 						</div>
 						<div className="col-4">
-							<button id="button-two" className="btn btn-primary" type="button" data-toggle="collapse" data-target="#saved-character-sheet-2" aria-expanded="false" aria-controls="saved-character-sheet-2">Character Sheet 2</button>
+							<button id="button-two" className="btn btn-primary" type="button" data-toggle="collapse" data-target="#saved-character-sheet-2" aria-expanded="false" aria-controls="saved-character-sheet-2">Character Sheet Template</button>
 						</div>
 						<div className="col-4">
-							<button id="button-three" className="btn btn-primary" type="button" data-toggle="collapse" data-target="#saved-character-sheet-3" aria-expanded="false" aria-controls="saved-character-sheet-3" disabled>Character Sheet 3</button>
+							<button id="button-three" className="btn btn-primary" type="button" data-toggle="collapse" data-target="#saved-character-sheet-3" aria-expanded="false" aria-controls="saved-character-sheet-3" disabled>{this.props.currentUsername}'s Character Sheet</button>
 						</div>
 					</div>
 
@@ -143,7 +148,7 @@ export class MainUsersPage extends Component {
 									<form>
 										<div className="form-group">
 											<label className="form-control-label">Player Name:</label>
-											<input type="text" className="form-control" value={state.sampleData.author} onKeyPress={this.props.handleInput} onChange={this.props.handleInput} />
+											<input type="text" className="form-control" value={state.sampleData.author} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Character Name:</label>
@@ -155,23 +160,23 @@ export class MainUsersPage extends Component {
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Race:</label>
-											<input type="text" className="form-control" value={state.sampleData.dadcharacter_class} placeholder="Half-Elf" onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" value={state.sampleData.dadcharacter_class} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Alignment:</label>
-											<input type="text" className="form-control" value={state.sampleData.dadcharacter_race} placeholder="Neutral Good" onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" value={state.sampleData.dadcharacter_race} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Deity:</label>
-											<input type="text" className="form-control" value={state.sampleData.dadcharacter_alignment} placeholder="N/A" onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" value={state.sampleData.dadcharacter_alignment} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Size:</label>
-											<input type="text" className="form-control" value={state.sampleData.dadcharacter_deity} placeholder="M" onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" value={state.sampleData.dadcharacter_deity} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Gender:</label>
-											<input type="text" className="form-control" value={state.sampleData.dadcharacter_size} placeholder="Male" onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" value={state.sampleData.dadcharacter_size} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Height:</label>

@@ -2,6 +2,14 @@
 	background-color: black;
 }
 
+#saved-sheets-buttons {
+	margin-bottom: 1rem;
+}
+
+#main-page-container div.row {
+	margin-bottom: 1rem;
+}
+
 .row form {
 	background-color: black;
 	color: grey;
