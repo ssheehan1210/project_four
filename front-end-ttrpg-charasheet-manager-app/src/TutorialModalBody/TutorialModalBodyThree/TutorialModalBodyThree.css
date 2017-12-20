@@ -2,6 +2,10 @@
 	height: 86px;
 }
 
+.emptyMar {
+	margin-bottom: 0;
+}
+
 #tutorial-data-list {
 	color: white;
 }
