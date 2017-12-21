@@ -6,6 +6,16 @@
 	margin-bottom: 0;
 }
 
+.abilName {
+	color: white;
+	text-align: center;
+	width: 42px;
+}
+
+.exSkillName {
+	padding: .375rem;
+}
+
 #tutorial-data-list {
 	color: white;
 }

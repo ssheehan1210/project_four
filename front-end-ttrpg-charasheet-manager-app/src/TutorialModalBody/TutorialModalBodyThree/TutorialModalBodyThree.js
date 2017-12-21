@@ -1126,7 +1126,7 @@ export class TutorialModalBodyThree extends Component {
 								</div>
 								<div className="form-row">
 									{this.state.appraiseUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.appraiseUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Appraise
@@ -1134,7 +1134,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.appraiseUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Appraise
@@ -1142,26 +1142,30 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="INT" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.appraiseSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">INT Mod.</label>
 										<input type="number" className="form-control" value={state.appraiseAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.appraiseRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.appraiseMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.balanceUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.balanceUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Balance
@@ -1169,7 +1173,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.balanceUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Balance
@@ -1177,26 +1181,30 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="DEX" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.balanceSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">DEX Mod.</label>
 										<input type="number" className="form-control" value={state.balanceAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.balanceRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.balanceMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.bluffUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.bluffUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Bluff
@@ -1204,7 +1212,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.bluffUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Bluff
@@ -1212,26 +1220,30 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="CHA" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.bluffSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">CHA Mod.</label>
 										<input type="number" className="form-control" value={state.bluffAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.bluffRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.bluffMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.climbUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.climbUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Climb
@@ -1239,7 +1251,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.climbUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Climb
@@ -1247,26 +1259,30 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="STR" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.climbSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">STR Mod.</label>
 										<input type="number" className="form-control" value={state.climbAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.climbRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.climbMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.concentrationUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.concentrationUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Concentration
@@ -1274,7 +1290,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.concentrationUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Concentration
@@ -1282,131 +1298,159 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="CON" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.concentrationSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">CON Mod.</label>
 										<input type="number" className="form-control" value={state.concentrationAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.concentrationRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.concentrationMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.craftOneUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.craftOneUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Craft 1
+													<input type="checkbox" className="form-check-input position-static" value={state.craftOneUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked />
 												</label>
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.craftOneUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Craft 1
+													<input type="checkbox" className="form-check-input position-static" value={state.craftOneUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 												</label>
 											</div>
 										</div>
 									}
 									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+										<label className="form-control-label">Craft 1</label>
+										<input type="text" className="form-control" value={state.craftOneNameInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+									</div>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="INT" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.craftOneSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">INT Mod.</label>
 										<input type="number" className="form-control" value={state.craftOneAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.craftOneRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.craftOneMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.craftTwoUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.craftTwoUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Craft 2
+													<input type="checkbox" className="form-check-input position-static" value={state.craftTwoUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked />
 												</label>
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.craftTwoUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Craft 2
+													<input type="checkbox" className="form-check-input position-static" value={state.craftTwoUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 												</label>
 											</div>
 										</div>
 									}
 									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+										<label className="form-control-label">Craft 2</label>
+										<input type="text" className="form-control" value={state.craftTwoNameInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+									</div>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="INT" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.craftTwoSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">INT Mod.</label>
 										<input type="number" className="form-control" value={state.craftTwoAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.craftTwoRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.craftTwoMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.craftThreeUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.craftThreeUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Craft 3
+													<input type="checkbox" className="form-check-input position-static" value={state.craftThreeUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked />
 												</label>
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.craftThreeUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Craft 3
+													<input type="checkbox" className="form-check-input position-static" value={state.craftThreeUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 												</label>
 											</div>
 										</div>
 									}
 									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+										<label className="form-control-label">Craft 3</label>
+										<input type="text" className="form-control" value={state.craftThreeNameInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+									</div>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="INT" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.craftThreeSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">INT Mod.</label>
 										<input type="number" className="form-control" value={state.craftThreeAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.craftThreeRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.craftThreeMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.decipherScriptUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.decipherScriptUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Decipher Script
@@ -1414,7 +1458,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.decipherScriptUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Decipher Script
@@ -1422,26 +1466,30 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="INT" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.decipherScriptSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">INT Mod.</label>
 										<input type="number" className="form-control" value={state.decipherScriptAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.decipherScriptRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.decipherScriptMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.diplomacyUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.diplomacyUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Diplomacy
@@ -1449,7 +1497,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.diplomacyUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Diplomacy
@@ -1457,26 +1505,30 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="CHA" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.diplomacySkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">CHA Mod.</label>
 										<input type="number" className="form-control" value={state.diplomacyAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.diplomacyRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.diplomacyMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.disableDeviceUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.disableDeviceUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Disable Device
@@ -1484,7 +1536,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.disableDeviceUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Disable Device
@@ -1492,26 +1544,30 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="INT" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.disableDeviceSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">INT Mod.</label>
 										<input type="number" className="form-control" value={state.disableDeviceAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.disableDeviceRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.disableDeviceMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.disguiseUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.disguiseUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Disguise
@@ -1519,7 +1575,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.disguiseUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Disguise
@@ -1527,26 +1583,30 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="CHA" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.disguiseSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">CHA Mod.</label>
 										<input type="number" className="form-control" value={state.disguiseAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.disguiseRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.disguiseMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.escapeArtistUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.escapeArtistUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Escape Artist
@@ -1554,7 +1614,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.escapeArtistUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Escape Artist
@@ -1562,26 +1622,30 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="DEX" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.escapeArtistSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">DEX Mod.</label>
 										<input type="number" className="form-control" value={state.escapeArtistAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.escapeArtistRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.escapeArtistMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.forgeryUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.forgeryUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Forgery
@@ -1589,7 +1653,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.forgeryUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Forgery
@@ -1597,26 +1661,30 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="INT" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.forgerySkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">INT Mod.</label>
 										<input type="number" className="form-control" value={state.forgeryAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.forgeryRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.forgeryMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.gatherInformationUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.gatherInformationUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Gather Information
@@ -1624,7 +1692,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.gatherInformationUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Gather Information
@@ -1632,26 +1700,30 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="CHA" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.gatherInformationSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">CHA Mod.</label>
 										<input type="number" className="form-control" value={state.gatherInformationAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.gatherInformationRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.gatherInformationMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.handleAnimalUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.handleAnimalUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Handle Animal
@@ -1659,7 +1731,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.handleAnimalUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Handle Animal
@@ -1667,26 +1739,30 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="CHA" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.handleAnimalSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">CHA Mod.</label>
 										<input type="number" className="form-control" value={state.handleAnimalAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.handleAnimalRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.handleAnimalMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.healUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.healUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Heal
@@ -1694,7 +1770,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.healUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Heal
@@ -1702,26 +1778,30 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="WIS" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.healSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">WIS Mod.</label>
 										<input type="number" className="form-control" value={state.healAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.healRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.healMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.hideUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.hideUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Hide
@@ -1729,7 +1809,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.hideUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Hide
@@ -1737,26 +1817,30 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="DEX" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.hideSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">DEX Mod.</label>
 										<input type="number" className="form-control" value={state.hideAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.hideRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.hideMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.intimidateUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.intimidateUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Intimidate
@@ -1764,7 +1848,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.intimidateUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Intimidate
@@ -1772,26 +1856,30 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="CHA" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.intimidateSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">CHA Mod.</label>
 										<input type="number" className="form-control" value={state.intimidateAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.intimidateRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.intimidateMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.jumpUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.jumpUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Jump
@@ -1799,7 +1887,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.jumpUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Jump
@@ -1807,201 +1895,245 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="STR" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.jumpSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">STR Mod.</label>
 										<input type="number" className="form-control" value={state.jumpAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.jumpRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.jumpMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.knowledgeOneUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.knowledgeOneUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Knowledge 1
+													<input type="checkbox" className="form-check-input position-static" value={state.knowledgeOneUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked />
 												</label>
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.knowledgeOneUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Knowledge 1
+													<input type="checkbox" className="form-check-input position-static" value={state.knowledgeOneUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 												</label>
 											</div>
 										</div>
 									}
 									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+										<label className="form-control-label">Knowledge 1</label>
+										<input type="text" className="form-control" value={state.knowledgeOneNameInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+									</div>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="INT" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.knowledgeOneSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">INT Mod.</label>
 										<input type="number" className="form-control" value={state.knowledgeOneAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.knowledgeOneRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.knowledgeOneMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.knowledgeTwoUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.knowledgeTwoUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Knowledge 2
+													<input type="checkbox" className="form-check-input position-static" value={state.knowledgeTwoUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked />
 												</label>
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.knowledgeTwoUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Knowledge 2
+													<input type="checkbox" className="form-check-input position-static" value={state.knowledgeTwoUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 												</label>
 											</div>
 										</div>
 									}
 									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+										<label className="form-control-label">Knowledge 2</label>
+										<input type="text" className="form-control" value={state.knowledgeTwoNameInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+									</div>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="INT" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.knowledgeTwoSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">INT Mod.</label>
 										<input type="number" className="form-control" value={state.knowledgeTwoAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.knowledgeTwoRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.knowledgeTwoMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.knowledgeThreeUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.knowledgeThreeUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Knowledge 3
+													<input type="checkbox" className="form-check-input position-static" value={state.knowledgeThreeUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked />
 												</label>
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.knowledgeThreeUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Knowledge 3
+													<input type="checkbox" className="form-check-input position-static" value={state.knowledgeThreeUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 												</label>
 											</div>
 										</div>
 									}
 									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+										<label className="form-control-label">Knowledge 3</label>
+										<input type="text" className="form-control" value={state.knowledgeThreeNameInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+									</div>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="INT" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.knowledgeThreeSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">INT Mod.</label>
 										<input type="number" className="form-control" value={state.knowledgeThreeAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.knowledgeThreeRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.knowledgeThreeMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.knowledgeFourUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.knowledgeFourUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Knowledge 4
+													<input type="checkbox" className="form-check-input position-static" value={state.knowledgeFourUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked />
 												</label>
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.knowledgeFourUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Knowledge 4
+													<input type="checkbox" className="form-check-input position-static" value={state.knowledgeFourUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 												</label>
 											</div>
 										</div>
 									}
 									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+										<label className="form-control-label">Knowledge 4</label>
+										<input type="text" className="form-control" value={state.knowledgeFourNameInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+									</div>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="INT" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.knowledgeFourSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">INT Mod.</label>
 										<input type="number" className="form-control" value={state.knowledgeFourAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.knowledgeFourRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.knowledgeFourMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.knowledgeFiveUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.knowledgeFiveUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Knowledge 5
+													<input type="checkbox" className="form-check-input position-static" value={state.knowledgeFiveUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked />
 												</label>
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.knowledgeFiveUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Knowledge 5
+													<input type="checkbox" className="form-check-input position-static" value={state.knowledgeFiveUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 												</label>
 											</div>
 										</div>
 									}
 									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+										<label className="form-control-label">Knowledge 5</label>
+										<input type="text" className="form-control" value={state.knowledgeFiveNameInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+									</div>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="INT" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.knowledgeFiveSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">INT Mod.</label>
 										<input type="number" className="form-control" value={state.knowledgeFiveAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.knowledgeFiveRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.knowledgeFiveMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.listenUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.listenUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Listen
@@ -2009,7 +2141,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.listenUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Listen
@@ -2017,26 +2149,30 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="WIS" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.listenSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">WIS Mod.</label>
 										<input type="number" className="form-control" value={state.listenAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.listenRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.listenMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.moveSilentlyUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.moveSilentlyUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Move Silently
@@ -2044,7 +2180,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.moveSilentlyUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Move Silently
@@ -2052,26 +2188,30 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="DEX" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.moveSilentlySkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">DEX Mod.</label>
 										<input type="number" className="form-control" value={state.moveSilentlyAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.moveSilentlyRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.moveSilentlyMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.openLockUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.openLockUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Open Lock
@@ -2079,7 +2219,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.openLockUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Open Lock
@@ -2087,201 +2227,245 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="DEX" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.openLockSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">DEX Mod.</label>
 										<input type="number" className="form-control" value={state.openLockAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.openLockRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.openLockMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.performOneUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.performOneUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Perform 1
+													<input type="checkbox" className="form-check-input position-static" value={state.performOneUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked />
 												</label>
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.performOneUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Perform 1
+													<input type="checkbox" className="form-check-input position-static" value={state.performOneUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 												</label>
 											</div>
 										</div>
 									}
 									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+										<label className="form-control-label">Perform 1</label>
+										<input type="text" className="form-control" value={state.performOneNameInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+									</div>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="CHA" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.performOneSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">CHA Mod.</label>
 										<input type="number" className="form-control" value={state.performOneAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.performOneRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.performOneMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.performTwoUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.performTwoUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Perform 2
+													<input type="checkbox" className="form-check-input position-static" value={state.performTwoUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked />
 												</label>
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.performTwoUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Perform 2
+													<input type="checkbox" className="form-check-input position-static" value={state.performTwoUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 												</label>
 											</div>
 										</div>
 									}
 									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+										<label className="form-control-label">Perform 2</label>
+										<input type="text" className="form-control" value={state.performTwoNameInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+									</div>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="CHA" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.performTwoSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">CHA Mod.</label>
 										<input type="number" className="form-control" value={state.performTwoAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.performTwoRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.performTwoMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.performThreeUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.performThreeUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Perform 3
+													<input type="checkbox" className="form-check-input position-static" value={state.performThreeUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked />
 												</label>
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.performThreeUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Perform 3
+													<input type="checkbox" className="form-check-input position-static" value={state.performThreeUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 												</label>
 											</div>
 										</div>
 									}
 									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+										<label className="form-control-label">Perform 3</label>
+										<input type="text" className="form-control" value={state.performThreeNameInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+									</div>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="CHA" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.performThreeSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">CHA Mod.</label>
 										<input type="number" className="form-control" value={state.performThreeAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.performThreeRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.performThreeMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.professionOneUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.professionOneUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Profession 1
+													<input type="checkbox" className="form-check-input position-static" value={state.professionOneUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked />
 												</label>
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.professionOneUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Profession 1
+													<input type="checkbox" className="form-check-input position-static" value={state.professionOneUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 												</label>
 											</div>
 										</div>
 									}
 									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+										<label className="form-control-label">Profession 2</label>
+										<input type="text" className="form-control" value={state.professionOneNameInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+									</div>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="WIS" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.professionOneSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">WIS Mod.</label>
 										<input type="number" className="form-control" value={state.professionOneAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.professionOneRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.professionOneMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.professionTwoUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.professionTwoUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Profession 2
+													<input type="checkbox" className="form-check-input position-static" value={state.professionTwoUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked />
 												</label>
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.professionTwoUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Profession 2
+													<input type="checkbox" className="form-check-input position-static" value={state.professionTwoUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 												</label>
 											</div>
 										</div>
 									}
 									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+										<label className="form-control-label">Profession 2</label>
+										<input type="text" className="form-control" value={state.professionTwoNameInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+									</div>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="WIS" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.professionTwoSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">WIS Mod.</label>
 										<input type="number" className="form-control" value={state.professionTwoAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.professionTwoRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.professionTwoMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.rideUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.rideUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Ride
@@ -2289,7 +2473,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.rideUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Ride
@@ -2297,26 +2481,30 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="DEX" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.rideSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">DEX Mod.</label>
 										<input type="number" className="form-control" value={state.rideAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.rideRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.rideMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.searchUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.searchUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Search
@@ -2324,7 +2512,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.searchUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Search
@@ -2332,26 +2520,30 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="INT" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.searchSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">INT Mod.</label>
 										<input type="number" className="form-control" value={state.searchAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.searchRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.searchMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.senseMotiveUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.senseMotiveUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Sense Motive
@@ -2359,7 +2551,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.senseMotiveUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Sense Motive
@@ -2367,26 +2559,30 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="WIS" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.senseMotiveSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">WIS Mod.</label>
 										<input type="number" className="form-control" value={state.senseMotiveAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.senseMotiveRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.senseMotiveMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.sleightOfHandUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.sleightOfHandUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Sleight of Hand
@@ -2394,7 +2590,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.sleightOfHandUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Sleight of Hand
@@ -2402,26 +2598,30 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="DEX" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.sleightOfHandSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">DEX Mod.</label>
 										<input type="number" className="form-control" value={state.sleightOfHandAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.sleightOfHandRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.sleightOfHandMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.spellcraftUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.spellcraftUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Spellcraft
@@ -2429,7 +2629,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.spellcraftUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Spellcraft
@@ -2437,26 +2637,30 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="INT" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.spellcraftSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">INT Mod.</label>
 										<input type="number" className="form-control" value={state.spellcraftAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.spellcraftRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.spellcraftMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.spotUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.spotUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Spot
@@ -2464,7 +2668,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.spotUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Spot
@@ -2472,26 +2676,30 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="WIS" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.spotSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">WIS Mod.</label>
 										<input type="number" className="form-control" value={state.spotAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.spotRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.spotMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.survivalUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.survivalUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Survival
@@ -2499,7 +2707,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.survivalUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Survival
@@ -2507,26 +2715,30 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="WIS" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.survivalSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">WIS Mod.</label>
 										<input type="number" className="form-control" value={state.survivalAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.survivalRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.survivalMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.swimUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.swimUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Swim
@@ -2534,7 +2746,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.swimUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Swim
@@ -2542,26 +2754,30 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="STR" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.swimSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">STR Mod.</label>
 										<input type="number" className="form-control" value={state.swimAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.swimRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.swimMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.tumbleUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.tumbleUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Tumble
@@ -2569,7 +2785,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.tumbleUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Tumble
@@ -2577,26 +2793,30 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="DEX" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.tumbleSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">DEX Mod.</label>
 										<input type="number" className="form-control" value={state.tumbleAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.tumbleRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.tumbleMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.useMagicDeviceUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.useMagicDeviceUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Use Magic Device
@@ -2604,7 +2824,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.useMagicDeviceUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Use Magic Device
@@ -2612,26 +2832,30 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="CHA" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.useMagicDeviceSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">CHA Mod.</label>
 										<input type="number" className="form-control" value={state.useMagicDeviceAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.useMagicDeviceRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.useMagicDeviceMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.useRopeUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.useRopeUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Use Rope
@@ -2639,7 +2863,7 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-3 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
 													<input type="checkbox" className="form-check-input" value={state.useRopeUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Use Rope
@@ -2647,125 +2871,153 @@ export class TutorialModalBodyThree extends Component {
 											</div>
 										</div>
 									}
-									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" readonly className="form-control-plaintext abilName" value="DEX" />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.useRopeSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">DEX Mod.</label>
 										<input type="number" className="form-control" value={state.useRopeAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.useRopeRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.useRopeMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.extraSkillOneUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.extraSkillOneUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Extra Skill 1
+													<input className="form-check-input position-static" type="checkbox" id="blankCheckboxExOneTrue" value={state.extraSkillOneUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked />
 												</label>
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.extraSkillOneUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Extra Skill 1
+													<input type="checkbox" className="form-check-input position-static" id="blankCheckboxExOneFalse" value={state.extraSkillOneUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 												</label>
 											</div>
 										</div>
 									}
 									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+										<label className="form-control-label">Skill Name</label>
+										<input type="text" className="form-control" value={state.extraSkillOneNameInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+									</div>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" className="form-control exSkillName" value={state.extraSkillOneKeyAbilityInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.extraSkillOneSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Ab. Mod.</label>
 										<input type="number" className="form-control" value={state.extraSkillOneAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.extraSkillOneRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.extraSkillOneMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.extraSkillTwoUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.extraSkillTwoUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Extra Skill 2
+													<input type="checkbox" className="form-check-input position-static" value={state.extraSkillTwoUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked />
 												</label>
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.extraSkillTwoUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Extra Skill 2
+													<input type="checkbox" className="form-check-input position-static" value={state.extraSkillTwoUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 												</label>
 											</div>
 										</div>
 									}
 									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+										<label className="form-control-label">Skill Name</label>
+										<input type="text" className="form-control" value={state.extraSkillTwoNameInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+									</div>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" className="form-control exSkillName" value={state.extraSkillTwoKeyAbilityInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.extraSkillTwoSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Ab. Mod.</label>
 										<input type="number" className="form-control" value={state.extraSkillTwoAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.extraSkillTwoRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.extraSkillTwoMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
 								<div className="form-row">
 									{this.state.extraSkillThreeUsableInputValue ?
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.extraSkillThreeUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked /> Extra Skill 3
+													<input type="checkbox" className="form-check-input position-static" value={state.extraSkillThreeUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} checked />
 												</label>
 											</div>
 										</div>
 									:
-										<div className="form-group col align-self-center emptyMar">
+										<div className="form-group col-1 align-self-center emptyMar">
 											<div className="form-check emptyMar">
 												<label className="form-check-label">
-													<input type="checkbox" className="form-check-input" value={state.extraSkillThreeUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} /> Extra Skill 3
+													<input type="checkbox" className="form-check-input position-static" value={state.extraSkillThreeUsableInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 												</label>
 											</div>
 										</div>
 									}
 									<div className="form-group col-2">
-										<label className="form-control-label">Skill Mod.:</label>
+										<label className="form-control-label">Skill Name</label>
+										<input type="text" className="form-control" value={state.extraSkillThreeNameInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+									</div>
+									<div className="form-group col-1">
+										<label className="form-control-label">Ability</label>
+										<input type="text" className="form-control exSkillName" value={state.extraSkillThreeKeyAbilityInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+									</div>
+									<div className="form-group col">
+										<label className="form-control-label">Skill</label>
 										<input type="number" className="form-control" value={state.extraSkillThreeSkillModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Ability Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Ab. Mod.</label>
 										<input type="number" className="form-control" value={state.extraSkillThreeAbilityModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Rank:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Rank</label>
 										<input type="number" className="form-control" value={state.extraSkillThreeRankInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
-									<div className="form-group col-2">
-										<label className="form-control-label">Misc. Mod.:</label>
+									<div className="form-group col">
+										<label className="form-control-label">Misc.</label>
 										<input type="number" className="form-control" value={state.extraSkillThreeMiscModInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 									</div>
 								</div>
