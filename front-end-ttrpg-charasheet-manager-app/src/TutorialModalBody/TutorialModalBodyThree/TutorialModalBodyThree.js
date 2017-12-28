@@ -6,9 +6,7 @@ export class TutorialModalBodyThree extends Component {
 		super(props);
 		this.state = {
 			nameInputValue: '',
-			characterProjectable: true,
 			targetEditData: '',
-			targetidInputValue: '',
 			targetCharacterInfo: '',
 			genderInputValue: '',
 			characterNameInputValue: ''
@@ -48,33 +46,6 @@ export class TutorialModalBodyThree extends Component {
 			if (e.target.id === '1') {
 				state.targetnameInputValue = e.target.value;
 			}
-			// } else if (e.target.id === "dchero-title") {
-			// 	state.targettitleInputValue = e.target.value;
-			// } else if (e.target.id === "dchero-subtitle") {
-			// 	state.targetsubtitleInputValue = e.target.value;
-			// } else if (e.target.id === "dchero-over-eighteen" || e.target.id === "dchero-under-eighteen") {
-			// 	state.targetoverEighteenInputValue = e.target.value;
-			// } else if (e.target.id === "dchero-gender") {
-			// 	state.targetgenderInputValue = e.target.value;
-			// } else if (e.target.id === "dchero-hometown") {
-			// 	state.targethometownInputValue = e.target.value;
-			// } else if (e.target.id === "dchero-current-location") {
-			// 	state.targetcurrentLocationInputValue = e.target.value;
-			// } else if (e.target.id === "dchero-image") {
-			// 	state.targetimageInputValue = e.target.value;
-			// } else if (e.target.id === "dchero-affiliation") {
-			// 	state.targetaffiliationInputValue = e.target.value;
-			// } else if (e.target.id === "dchero-has-superpowers" || e.target.id === "dchero-has-no-superpowers") {
-			// 	state.targethasSuperpowersInputValue = e.target.value;
-			// } else if (e.target.id === "dchero-powers") {
-			// 	state.targetpowersInputValue = e.target.value;
-			// } else if (e.target.id === "dchero-abilities") {
-			// 	state.targetabilitiesInputValue = e.target.value;
-			// } else if (e.target.id === "dchero-arsenal") {
-			// 	state.targetarsenalInputValue = e.target.value;
-			// } else if (e.target.id === "dchero-weaknesses") {
-			// 	state.targetweaknessesInputValue = e.target.value;
-			// }
 		}
 		this.setState(state);
 	}

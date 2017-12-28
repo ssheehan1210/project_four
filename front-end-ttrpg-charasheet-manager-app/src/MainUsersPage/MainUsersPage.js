@@ -10,7 +10,8 @@ export class MainUsersPage extends Component {
 		this.state = {
 			sampleData: '',
 			somethingWrongWithModal: false,
-			modalArray: [{startedModalOne: false, startModalTwo: false, startModalThree: false}]
+			modalArray: [{startedModalOne: false, startModalTwo: false, startModalThree: false}],
+			hasDungeonDragonSheet: false
 		};
 	}
 
@@ -41,21 +42,41 @@ export class MainUsersPage extends Component {
 		this.setState(state);
 	}
 
+	startNewCharacter = () => {
+		this.props.creatingNewDungeonDragonSheet();
+	}
+
 	render() {
 		const state = this.state;
-		state.sampleData = this.props.postData.find(x => x.dungeons_and_dragons === true);
-		state.sampleAuthor = state.sampleData.author;
-		state.sampleCharacterName = state.sampleData.dadcharacter_name;
-		state.sampleGenderInputValue = state.sampleData.dadcharacter_gender;
-		state.sampleClassInputValue = state.sampleData.dadcharacter_class;
-		state.sampleRaceInputValue = state.sampleData.dadcharacter_race;
-		state.sampleAlignmentInputValue = state.sampleData.dadcharacter_alignment;
-		state.sampleDeityInputValue = state.sampleData.dadcharacter_deity;
-		state.sampleSizeInputValue = state.sampleData.dadcharacter_size;
-		state.sampleHeightInputValue = state.sampleData.dadcharacter_height;
-		state.sampleWeightInfoValue = state.sampleData.dadcharacter_weight;
-		state.sampleEyesInputValue = state.sampleData.dadcharacter_eyes;
-		state.sampleHairInputValue = state.sampleData.dadcharacter_hair;
+		for (let h = 0; h < this.props.postData.length; h++) {
+			console.log('Post User Id: ', this.props.postData[h].user_id);
+			if (this.props.postData[h].user_id === this.props.currentId) {
+				console.log(this.props.postData[h], 'Character Sheet Found.');
+				state.sampleData = this.props.postData[h];
+				state.sampleAuthor = state.sampleData.author;
+				state.sampleCharacterName = state.sampleData.dadcharacter_name;
+				state.sampleGenderInputValue = state.sampleData.dadcharacter_gender;
+				state.sampleClassInputValue = state.sampleData.dadcharacter_class;
+				state.sampleRaceInputValue = state.sampleData.dadcharacter_race;
+				state.sampleAlignmentInputValue = state.sampleData.dadcharacter_alignment;
+				state.sampleDeityInputValue = state.sampleData.dadcharacter_deity;
+				state.sampleSizeInputValue = state.sampleData.dadcharacter_size;
+				state.sampleHeightInputValue = state.sampleData.dadcharacter_height;
+				state.sampleWeightInfoValue = state.sampleData.dadcharacter_weight;
+				state.sampleEyesInputValue = state.sampleData.dadcharacter_eyes;
+				state.sampleHairInputValue = state.sampleData.dadcharacter_hair;
+				state.hasDungeonDragonSheet = true;
+			} else {
+				console.log('No return from postData search for the user. See if user_id or currentId are getting the correct values.');
+				console.log('The currentId value is ' + this.props.currentId);
+			}
+		}
+		if (state.hasDungeonDragonSheet === true) {
+			console.log('Dungeons and Dragons info should be appearing for the user.');
+		} else if (state.hasDungeonDragonSheet === false) {
+			console.log('Pulling up empty Dungeons and Dragons sheet now.');
+		}
+
 		const contentOfModal = state.modalArray.map((item, i) => {
 			if (item.startModalThree === true) {
 				return (
@@ -111,8 +132,17 @@ export class MainUsersPage extends Component {
 
 					<div className="row">
 						<div className="col-12">
-							<h4>Click here to start the tutorial:</h4><br/>
+							<h4>Click here to open the tutorial:</h4><br/>
 							<button className="btn btn-primary" type="button" data-toggle="modal" data-target="#tutorialModal" onClick={this.nextModalPage}>Start Tutorial</button>
+							<br/>
+							<br/>
+						</div>
+					</div>
+
+					<div className="row">
+						<div className="col-12">
+							<h4>Click here to create a character and start the tutorial:</h4><br/>
+							<button className="btn btn-primary" type="button" onClick={this.startNewCharacter}>Create Sheet</button>
 							<br/>
 							<br/>
 						</div>
@@ -145,56 +175,62 @@ export class MainUsersPage extends Component {
 									</div>
 								</div>
 								<div className="row justify-content-center">
+								{this.state.hasDungeonDragonSheet ?
 									<form>
 										<div className="form-group">
 											<label className="form-control-label">Player Name:</label>
-											<input type="text" className="form-control" value={state.sampleData.author} onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" value={state.sampleAuthor} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Character Name:</label>
-											<input type="text" className="form-control" value={state.sampleData.dadcharacter_name} onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" value={state.sampleCharacterName} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Class:</label>
-											<input type="text" className="form-control" value={state.sampleData.dadcharacter_gender} onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" value={state.sampleClassInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Race:</label>
-											<input type="text" className="form-control" value={state.sampleData.dadcharacter_class} onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" value={state.sampleRaceInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Alignment:</label>
-											<input type="text" className="form-control" value={state.sampleData.dadcharacter_race} onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" value={state.sampleAlignmentInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Deity:</label>
-											<input type="text" className="form-control" value={state.sampleData.dadcharacter_alignment} onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" value={state.sampleDeityInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Size:</label>
-											<input type="text" className="form-control" value={state.sampleData.dadcharacter_deity} onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" value={state.sampleSizeInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Gender:</label>
-											<input type="text" className="form-control" value={state.sampleData.dadcharacter_size} onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" value={state.sampleGenderInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Height:</label>
-											<input type="text" className="form-control" value={state.sampleData.dadcharacter_height} onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" value={state.sampleHeightInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Weight:</label>
-											<input type="text" className="form-control" value={state.sampleData.dadcharacter_weight} onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" value={state.sampleWeightInfoValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Eyes:</label>
-											<input type="text" className="form-control" value={state.sampleData.dadcharacter_eyes} onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" value={state.sampleEyesInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Hair:</label>
-											<input type="text" className="form-control" value={state.sampleData.dadcharacter_hair} onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" value={state.sampleHairInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 									</form>
+								:
+									<div className="col-12">
+										<p>No Dungeons and Dragons sheet available.</p>
+									</div>
+								}
 								</div>
 							</div>
 						</div>
