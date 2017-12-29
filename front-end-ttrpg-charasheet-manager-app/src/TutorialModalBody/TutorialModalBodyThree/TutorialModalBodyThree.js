@@ -1115,7 +1115,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="INT" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="INT" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -1154,7 +1154,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="DEX" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="DEX" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -1193,7 +1193,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="CHA" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="CHA" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -1232,7 +1232,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="STR" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="STR" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -1271,7 +1271,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="CON" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="CON" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -1314,7 +1314,7 @@ export class TutorialModalBodyThree extends Component {
 									</div>
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="INT" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="INT" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -1357,7 +1357,7 @@ export class TutorialModalBodyThree extends Component {
 									</div>
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="INT" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="INT" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -1400,7 +1400,7 @@ export class TutorialModalBodyThree extends Component {
 									</div>
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="INT" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="INT" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -1439,7 +1439,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="INT" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="INT" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -1478,7 +1478,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="CHA" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="CHA" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -1517,7 +1517,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="INT" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="INT" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -1556,7 +1556,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="CHA" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="CHA" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -1595,7 +1595,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="DEX" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="DEX" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -1634,7 +1634,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="INT" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="INT" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -1673,7 +1673,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="CHA" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="CHA" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -1712,7 +1712,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="CHA" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="CHA" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -1751,7 +1751,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="WIS" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="WIS" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -1790,7 +1790,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="DEX" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="DEX" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -1829,7 +1829,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="CHA" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="CHA" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -1868,7 +1868,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="STR" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="STR" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -1911,7 +1911,7 @@ export class TutorialModalBodyThree extends Component {
 									</div>
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="INT" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="INT" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -1954,7 +1954,7 @@ export class TutorialModalBodyThree extends Component {
 									</div>
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="INT" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="INT" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -1997,7 +1997,7 @@ export class TutorialModalBodyThree extends Component {
 									</div>
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="INT" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="INT" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -2040,7 +2040,7 @@ export class TutorialModalBodyThree extends Component {
 									</div>
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="INT" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="INT" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -2083,7 +2083,7 @@ export class TutorialModalBodyThree extends Component {
 									</div>
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="INT" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="INT" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -2122,7 +2122,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="WIS" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="WIS" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -2161,7 +2161,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="DEX" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="DEX" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -2200,7 +2200,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="DEX" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="DEX" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -2243,7 +2243,7 @@ export class TutorialModalBodyThree extends Component {
 									</div>
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="CHA" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="CHA" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -2286,7 +2286,7 @@ export class TutorialModalBodyThree extends Component {
 									</div>
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="CHA" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="CHA" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -2329,7 +2329,7 @@ export class TutorialModalBodyThree extends Component {
 									</div>
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="CHA" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="CHA" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -2372,7 +2372,7 @@ export class TutorialModalBodyThree extends Component {
 									</div>
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="WIS" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="WIS" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -2415,7 +2415,7 @@ export class TutorialModalBodyThree extends Component {
 									</div>
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="WIS" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="WIS" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -2454,7 +2454,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="DEX" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="DEX" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -2493,7 +2493,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="INT" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="INT" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -2532,7 +2532,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="WIS" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="WIS" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -2571,7 +2571,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="DEX" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="DEX" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -2610,7 +2610,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="INT" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="INT" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -2649,7 +2649,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="WIS" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="WIS" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -2688,7 +2688,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="WIS" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="WIS" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -2727,7 +2727,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="STR" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="STR" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -2766,7 +2766,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="DEX" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="DEX" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -2805,7 +2805,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="CHA" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="CHA" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>
@@ -2844,7 +2844,7 @@ export class TutorialModalBodyThree extends Component {
 									}
 									<div className="form-group col-1">
 										<label className="form-control-label">Ability</label>
-										<input type="text" readonly className="form-control-plaintext abilName" value="DEX" />
+										<input type="text" readOnly className="form-control-plaintext abilName" value="DEX" />
 									</div>
 									<div className="form-group col">
 										<label className="form-control-label">Skill</label>

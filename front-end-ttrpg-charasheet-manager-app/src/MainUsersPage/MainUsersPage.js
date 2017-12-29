@@ -17,40 +17,55 @@ export class MainUsersPage extends Component {
 
 	nextModalPage = () => {
 		const state = this.state;
-		if (state.somethingWrongWithModal === false) {
-			state.modalArray.map((item, i) => {
-				console.log(item, 'this is the item');
-				if (state.modalArray[i].startedModalOne === false) {
+		if (state.somethingWrongWithModal === true) {
+			console.log('The somethingWrongWithModal boolean is set to true. Find out what set it off.');
+		} else if (state.somethingWrongWithModal === false) {
+			console.log('Starting nextModalPage function now.');
+			state.modalArray.forEach((item, i) => {
+				console.log(item, 'this is the item for nextModalPage');
+				if (item.startedModalOne === false) {
 					console.log('Setting ModalOne to true');
-					state.modalArray[i].startedModalOne = true;
-				} else if (state.modalArray[i].startModalTwo === false) {
+					item.startedModalOne = true;
+				} else if (item.startModalTwo === false) {
 					console.log('Setting Modal Two to true');
-					state.modalArray[i].startModalTwo = true;
-				} else if (state.modalArray[i].startModalThree === false) {
+					item.startModalTwo = true;
+				} else if (item.startModalThree === false) {
 					console.log('Setting Modal Three to true');
-					state.modalArray[i].startModalThree = true;
+					item.startModalThree = true;
 				} else {
 					console.log('Resetting modal booleans back to false');
 					state.modalArray[i].startedModalOne = false;
 					state.modalArray[i].startModalTwo = false;
 					state.modalArray[i].startModalThree = false;
+					console.log(item, 'final state of the item');
 				}
 			});
+			console.log('Ending nextModalPage function.');
 		} else {
-			console.log('Something is wrong with the modal. Fix it.');
+			console.log('Something is wrong with the modal that is not related to the somethingWrongWithModal boolean and/or the nextModalPage. Fix it.');
 		}
 		this.setState(state);
 	}
 
-	startNewCharacter = () => {
-		this.props.creatingNewDungeonDragonSheet();
-	}
+	// startNewCharacter = () => {
+	// 	this.props.creatingNewDungeonDragonSheet();
+	// }
+
+	// // <div className="row">
+	// 	<div className="col-12">
+	// 		<h4>Click here to create a character and start the tutorial:</h4><br/>
+	// 		<button className="btn btn-primary" type="button" onClick={this.startNewCharacter}>Create Sheet</button>
+	// 		<br/>
+	// 		<br/>
+	// 	</div>
+	// </div>
 
 	render() {
 		const state = this.state;
 		for (let h = 0; h < this.props.postData.length; h++) {
 			console.log('Post User Id: ', this.props.postData[h].user_id);
-			if (this.props.postData[h].user_id === this.props.currentId) {
+			// if (this.props.postData[h].user_id === this.props.currentId) {
+			if (this.props.postData[h].user_id === 1) {
 				console.log(this.props.postData[h], 'Character Sheet Found.');
 				state.sampleData = this.props.postData[h];
 				state.sampleAuthor = state.sampleData.author;
@@ -67,8 +82,8 @@ export class MainUsersPage extends Component {
 				state.sampleHairInputValue = state.sampleData.dadcharacter_hair;
 				state.hasDungeonDragonSheet = true;
 			} else {
-				console.log('No return from postData search for the user. See if user_id or currentId are getting the correct values.');
-				console.log('The currentId value is ' + this.props.currentId);
+				console.log('No return from postData search for the user. Maybe see if user_id or currentId are getting the correct values.');
+				// console.log('The currentId value is ' + this.props.currentId);
 			}
 		}
 		if (state.hasDungeonDragonSheet === true) {
@@ -94,6 +109,12 @@ export class MainUsersPage extends Component {
 				return (
 					<div key={i}>
 						<TutorialModalBodyOne currentUsername={this.props.currentUsername} currentPassword={this.props.currentPassword} postData={this.props.postData} userData={this.props.userData} goingToLogIn={this.props.goingToLogIn} goingToSignIn={this.props.goingToSignIn} />
+					</div>
+				)
+			} else {
+				return (
+					<div key={i}>
+						<h5>No other conditions are being met for the modal. Make sure this was meant to happen.</h5>
 					</div>
 				)
 			}
@@ -141,16 +162,7 @@ export class MainUsersPage extends Component {
 
 					<div className="row">
 						<div className="col-12">
-							<h4>Click here to create a character and start the tutorial:</h4><br/>
-							<button className="btn btn-primary" type="button" onClick={this.startNewCharacter}>Create Sheet</button>
-							<br/>
-							<br/>
-						</div>
-					</div>
-
-					<div className="row">
-						<div className="col-12">
-							<h3>{this.props.currentUsername}'s Saved Character Sheets</h3>
+							<h3>Saved Character Sheets for {this.props.currentUsername}</h3>
 						</div>
 					</div>
 
@@ -179,51 +191,51 @@ export class MainUsersPage extends Component {
 									<form>
 										<div className="form-group">
 											<label className="form-control-label">Player Name:</label>
-											<input type="text" className="form-control" value={state.sampleAuthor} onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" defaultValue={state.sampleAuthor} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Character Name:</label>
-											<input type="text" className="form-control" value={state.sampleCharacterName} onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" defaultValue={state.sampleCharacterName} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Class:</label>
-											<input type="text" className="form-control" value={state.sampleClassInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" defaultValue={state.sampleClassInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Race:</label>
-											<input type="text" className="form-control" value={state.sampleRaceInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" defaultValue={state.sampleRaceInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Alignment:</label>
-											<input type="text" className="form-control" value={state.sampleAlignmentInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" defaultValue={state.sampleAlignmentInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Deity:</label>
-											<input type="text" className="form-control" value={state.sampleDeityInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" defaultValue={state.sampleDeityInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Size:</label>
-											<input type="text" className="form-control" value={state.sampleSizeInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" defaultValue={state.sampleSizeInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Gender:</label>
-											<input type="text" className="form-control" value={state.sampleGenderInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" defaultValue={state.sampleGenderInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Height:</label>
-											<input type="text" className="form-control" value={state.sampleHeightInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" defaultValue={state.sampleHeightInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Weight:</label>
-											<input type="text" className="form-control" value={state.sampleWeightInfoValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" defaultValue={state.sampleWeightInfoValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Eyes:</label>
-											<input type="text" className="form-control" value={state.sampleEyesInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" defaultValue={state.sampleEyesInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 										<div className="form-group">
 											<label className="form-control-label">Hair:</label>
-											<input type="text" className="form-control" value={state.sampleHairInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+											<input type="text" className="form-control" defaultValue={state.sampleHairInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
 										</div>
 									</form>
 								:
@@ -238,7 +250,7 @@ export class MainUsersPage extends Component {
 					<div className="row collapse" id="saved-character-sheet-2">
 						<div className="col-12">
 							<h3>Official Character Sheet Version</h3>
-							<img src="https://i.warosu.org/data/tg/img/0415/77/1438320251039.jpg" />
+							<img src="https://i.warosu.org/data/tg/img/0415/77/1438320251039.jpg" alt='Example of a Blank Dungeons and Dragons Character Sheet' />
 						</div>
 					</div>
 					<div className="row collapse" id="saved-character-sheet-3">

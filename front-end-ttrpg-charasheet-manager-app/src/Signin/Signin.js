@@ -9,6 +9,7 @@ export class Signin extends Component {
 			newUsernameReady: false,
 			newUserName: '',
 			newPassword: ''
+			// profileCreated: false
 		};
 	}
 
@@ -24,14 +25,30 @@ export class Signin extends Component {
 				state.newPassword = e.target.value;
 				console.log('New Username: ' + state.newUserName + ' New Password: ' + state.newPassword);
 				this.props.createNewUser(state.newUserName, state.newPassword);
+				// console.log('CNDDS Log 1: newUserName = ', state.newUserName);
+				// state.profileCreated = true;
+				// this.setState(state);
+				// if (state.profileCreated === true) {
+				// 	this.props.creatingNewDungeonDragonSheet(state.newUserName);
+				// 	this.setState(state);
+				// 	console.log('CNDDS Log 5: currentId = ' + this.props.currentId);
+				// 	this.props.jumpToLogin('go');
+				// }
+				// this.props.creatingNewDungeonDragonSheet(state.newUserName);
+				// console.log('CNDDS Log 5: currentId = ' + this.props.currentId);
 				this.props.jumpToLogin('go');
 			}
 		}
+		// if (state.profileCreated === true) {
+		// 	this.props.creatingNewDungeonDragonSheet(state.newUserName);
+		// 	console.log('CNDDS Log 5: currentId = ' + this.props.currentId);
+		// 	this.props.jumpToLogin('go');
+		// }
 	}
 
-	nowJumpToLogin = () => {
-		this.props.jumpToLogin('go');
-	}
+	// nowJumpToLogin = () => {
+	// 	this.props.jumpToLogin('go');
+	// }
 
 	render() {
 		return (

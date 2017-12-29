@@ -28,6 +28,9 @@ export class Login extends Component {
 		}
 	}
 
+	// Signin createNewPost={this.props.createNewPost} creatingNewDungeonDragonSheet={this.props.creatingNewDungeonDragonSheet} createNewUser={this.props.createNewUser} megaJumpToLogin={this.props.megaJumpToLogin} jumpToSignin={this.props.jumpToSignin} jumpToLogin={this.props.jumpToLogin} currentId={this.props.currentId} currentUsername={this.props.currentUsername} currentPassword={this.props.currentPassword} postData={this.props.postData} userData={this.props.userData} goingToLogIn={this.props.goingToLogIn} goingToSignIn={this.props.goingToSignIn}
+
+
 	render() {
 		return (
 			<div>

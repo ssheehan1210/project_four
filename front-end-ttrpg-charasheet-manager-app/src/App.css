@@ -9,6 +9,7 @@ h1, h3, h4, p {
 
 .App {
   text-align: center;
+  height: 100%;
 }
 
 /*.App-logo {
