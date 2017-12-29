@@ -64,8 +64,7 @@ export class MainUsersPage extends Component {
 		const state = this.state;
 		for (let h = 0; h < this.props.postData.length; h++) {
 			console.log('Post User Id: ', this.props.postData[h].user_id);
-			// if (this.props.postData[h].user_id === this.props.currentId) {
-			if (this.props.postData[h].user_id === 1) {
+			if (this.props.postData[h].user_id === this.props.currentId) {
 				console.log(this.props.postData[h], 'Character Sheet Found.');
 				state.sampleData = this.props.postData[h];
 				state.sampleAuthor = state.sampleData.author;
@@ -81,15 +80,12 @@ export class MainUsersPage extends Component {
 				state.sampleEyesInputValue = state.sampleData.dadcharacter_eyes;
 				state.sampleHairInputValue = state.sampleData.dadcharacter_hair;
 				state.hasDungeonDragonSheet = true;
-			} else {
-				console.log('No return from postData search for the user. Maybe see if user_id or currentId are getting the correct values.');
-				// console.log('The currentId value is ' + this.props.currentId);
 			}
 		}
 		if (state.hasDungeonDragonSheet === true) {
 			console.log('Dungeons and Dragons info should be appearing for the user.');
 		} else if (state.hasDungeonDragonSheet === false) {
-			console.log('Pulling up empty Dungeons and Dragons sheet now.');
+			console.log('There should be an empty character sheet right now.');
 		}
 
 		const contentOfModal = state.modalArray.map((item, i) => {
