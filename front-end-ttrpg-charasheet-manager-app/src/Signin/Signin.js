@@ -81,7 +81,7 @@ export class Signin extends Component {
 						</div>
 						<div className='row'>
 							<div className='col s12'>
-								<img className='img-fluid' src="#" alt='insert relevant visual here' />
+								<img className='img-fluid' id='signin-page-image' src="https://media1.britannica.com/eb-media/32/145832-004-510D6F21.jpg" alt='insert relevant visual here' />
 							</div>
 						</div>
 					</div>

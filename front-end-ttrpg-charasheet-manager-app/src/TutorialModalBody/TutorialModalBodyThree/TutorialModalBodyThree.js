@@ -6,7 +6,7 @@ export class TutorialModalBodyThree extends Component {
 		super(props);
 		this.state = {
 			nameInputValue: '',
-			targetEditData: '',
+			// targetEditData: '',
 			targetCharacterInfo: '',
 			genderInputValue: '',
 			characterNameInputValue: ''
@@ -34,11 +34,11 @@ export class TutorialModalBodyThree extends Component {
 		e.preventDefault();
 	}
 
-	currentCharacterVersion = () => {
-		const state = this.state;
-		state.targetEditData = this.props.userData.find(x => x.id === 1).author;
-		this.setState(state);
-	}
+	// currentCharacterVersion = () => {
+	// 	const state = this.state;
+	// 	state.targetEditData = this.props.userData.find(x => x.id === 1).author;
+	// 	this.setState(state);
+	// }
 
 	handleInput = (e) => {
 		const state = this.state;
@@ -53,8 +53,12 @@ export class TutorialModalBodyThree extends Component {
 	render() {
 		console.log(this.props.postData, 'this is the initial data being rendered for the post');
 		const state = this.state;
-		state.targetCharacterInfo = this.props.postData.find(x => x.dungeons_and_dragons === true);
-		state.nameInputValue = state.targetCharacterInfo.author;
+		state.targetCharacterInfo = this.props.postData.find(x => x.user_id === this.props.currentId);
+		state.sheetTitleInputValue = state.targetCharacterInfo.title;
+		state.authorInputValue = state.targetCharacterInfo.author;
+		state.sheetIdInputValue = state.targetCharacterInfo.id;
+		state.contentInputValue = state.targetCharacterInfo.content;
+		state.nameInputValue = state.targetCharacterInfo.dadcharacter_player;
 		state.characterNameInputValue = state.targetCharacterInfo.dadcharacter_name;
 		state.genderInputValue = state.targetCharacterInfo.dadcharacter_gender;
 		state.classInputValue = state.targetCharacterInfo.dadcharacter_class;
@@ -443,12 +447,36 @@ export class TutorialModalBodyThree extends Component {
 				<div className="container-fluid">
 					<div className="row">
 						<div className="col-12">
-							<h5>Your New Character Sheet Stats</h5>
+							<h5>Your Dungeons and Dragons Character Sheet</h5>
 						</div>
 					</div>
 					<div className="row">
 						<div className="col-12">
 							<form id='tutorial-data-list'>
+								<div className="form-row">
+									<div className="form-group col-5" id="author-form-column">
+										<label className="form-control-label">Author Name:</label>
+										<input type="text" readOnly className="form-control-plaintext formReadOnlyBox" value={state.authorInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+									</div>
+									<div className="form-group col-5">
+										<label className="form-control-label">Character Sheet Title:</label>
+										<input type="text" className="form-control" value={state.sheetTitleInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+									</div>
+									<div className="form-group col" id="id-form-column">
+										<label className="form-control-label">ID #</label>
+										<input type="number" readOnly className="form-control-plaintext formReadOnlyBox" value={state.sheetIdInputValue} onKeyPress={this.handleInput} onChange={this.handleInput} />
+									</div>
+								</div>
+								<div className="form-row">
+									<div className="form-group col-12">
+										<label className="form-control-label">Character Sheet Content:</label>
+										<textarea className="form-control" rows="5" value={state.contentInputValue} onKeyPress={this.handleInput} onChange={this.handleInput}></textarea>
+									</div>
+								</div>
+								<div className="form-row emptyFormSpace">
+									<div className="col">
+									</div>
+								</div>
 								<div className="form-row">
 									<div className="form-group col-6">
 										<label className="form-control-label">Player Name:</label>

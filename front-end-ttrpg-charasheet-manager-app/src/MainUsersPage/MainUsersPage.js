@@ -92,19 +92,19 @@ export class MainUsersPage extends Component {
 			if (item.startModalThree === true) {
 				return (
 					<div key={i}>
-						<TutorialModalBodyThree nextModalPage={this.nextModalPage} currentUsername={this.props.currentUsername} currentPassword={this.props.currentPassword} postData={this.props.postData} userData={this.props.userData} goingToLogIn={this.props.goingToLogIn} goingToSignIn={this.props.goingToSignIn} />
+						<TutorialModalBodyThree nextModalPage={this.nextModalPage} currentId={this.props.currentId} currentUsername={this.props.currentUsername} currentPassword={this.props.currentPassword} postData={this.props.postData} userData={this.props.userData} goingToLogIn={this.props.goingToLogIn} goingToSignIn={this.props.goingToSignIn} />
 					</div>
 				)
 			} else if (item.startModalTwo === true) {
 				return (
 					<div key={i}>
-						<TutorialModalBodyTwo currentUsername={this.props.currentUsername} currentPassword={this.props.currentPassword} postData={this.props.postData} userData={this.props.userData} goingToLogIn={this.props.goingToLogIn} goingToSignIn={this.props.goingToSignIn} />
+						<TutorialModalBodyTwo currentId={this.props.currentId} currentUsername={this.props.currentUsername} currentPassword={this.props.currentPassword} postData={this.props.postData} userData={this.props.userData} goingToLogIn={this.props.goingToLogIn} goingToSignIn={this.props.goingToSignIn} />
 					</div>
 				)
 			} else if (item.startedModalOne === true) {
 				return (
 					<div key={i}>
-						<TutorialModalBodyOne currentUsername={this.props.currentUsername} currentPassword={this.props.currentPassword} postData={this.props.postData} userData={this.props.userData} goingToLogIn={this.props.goingToLogIn} goingToSignIn={this.props.goingToSignIn} />
+						<TutorialModalBodyOne currentId={this.props.currentId} currentUsername={this.props.currentUsername} currentPassword={this.props.currentPassword} postData={this.props.postData} userData={this.props.userData} goingToLogIn={this.props.goingToLogIn} goingToSignIn={this.props.goingToSignIn} />
 					</div>
 				)
 			} else {

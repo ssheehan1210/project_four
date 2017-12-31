@@ -6,6 +6,12 @@
 	margin-bottom: 0;
 }
 
+.formReadOnlyBox {
+	color: white;
+	text-align: center;
+	width: 100%;
+}
+
 .abilName {
 	color: white;
 	text-align: center;
@@ -18,4 +24,12 @@
 
 #tutorial-data-list {
 	color: white;
+}
+
+#author-form-column {
+	width: 100%;
+}
+
+#id-form-column {
+	width: 100%;
 }
